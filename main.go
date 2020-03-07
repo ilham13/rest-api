@@ -19,6 +19,7 @@ func main() {
 	/** REST API **/
 	// Get a tax code resource
 	router.GET("/tax_code", tc.GetTaxCode)
+	router.POST("/tax_code", tc.CreateTaxCode)
 
 	log.Println("Starting server.....")
 	// http.ListenAndServe(":3000", router)
